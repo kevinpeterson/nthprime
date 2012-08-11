@@ -1,8 +1,11 @@
-#Specify the version being used aswell as the language
 cmake_minimum_required(VERSION 2.6)
-#Name your project here
+
 project(nthprime)
 
 add_executable(nthprime nthprime.c)
+
+if (UNIX)
+  TARGET_LINK_LIBRARIES(nthprime -lm)
+endif ()
 
 install (TARGETS nthprime DESTINATION bin)
