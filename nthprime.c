@@ -13,7 +13,7 @@ int get_nth_prime(int nth_prime) {
     for(i=2;primes<nth_prime;i++){
         char prime = 1;
         int j;
-        for(j=2;j<=sqrt(i);j++){
+        for(j=2;j*j<=i;j++){
             if(i % j == 0 && i != j){
                 prime = 0;
                 break;
