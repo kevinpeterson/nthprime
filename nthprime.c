@@ -65,6 +65,11 @@ int sieve(int nth_prime) {
 }
 
 int main(int argc, char* argv[]) {
+    if(argc != 2 || argv[1] == NULL){
+        printf("Usage: nthprime <nth>\n");
+        return 1;
+    }
+
     int nth = atoi(argv[1]);
 
     int prime;
