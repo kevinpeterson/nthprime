@@ -14,4 +14,9 @@ make
 sudo make install
 ```
 
+### Usage
+```
+nthprime <nth>
+```
+
 
