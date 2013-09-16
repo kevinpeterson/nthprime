@@ -11,6 +11,12 @@ int divide_check(int nth_prime) {
     int current_prime;
 
     int i;
+
+    if(nth_prime==1) {
+        // Special case - first prime is the only even one
+	return 2;
+    }
+
     for(i=1;primes<nth_prime;i+=2){
         char prime = 1;
         
