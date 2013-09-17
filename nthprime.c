@@ -41,7 +41,7 @@ int divide_check(int nth_prime) {
 int sieve(int nth_prime) {
     //approximate the prime number given n. This is guarenteed
     //to be > the actual nth prime. This is used to determine
-    //how big our sieve must be.
+    //how big our sieve must be. (Rosser's theorem)
     int nth_prime_approx_max = ( log(nth_prime) + log(log(nth_prime)) ) * nth_prime;
 
     int i,j;
@@ -92,4 +92,3 @@ int main(int argc, char* argv[]) {
 
     return 0;
 }
-
